@@ -15,7 +15,8 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button ;
+    Button btnNew;
+    Button new;
     Button btnOpen;
     Button btnSave;
     EditText editContent;
