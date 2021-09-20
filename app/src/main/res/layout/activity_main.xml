@@ -4,15 +4,35 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/brown"
+    android:background="@color/white"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <EditText
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/header_linear"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="@dimen/tiny_margin"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_weight="1"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="@string/title"
+        android:inputType="textPersonName|textNoSuggestions"
+        android:paddingLeft="17dp"
+        android:paddingStart="17dp">
+    </EditText>
+
 >
     <EditText
-        android:id="@+id/edit_file"
+        android:id="@+id/file"
         style="@style/Widget.AppCompat.EditText"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -21,11 +41,12 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/header_linear"
-        android:background="@android:color/white"
+        android:layout_below="@+id/judul"
         android:gravity="top|start"
+        android:background="@drawable/input"
+        android:hint="@string/data"
         android:inputType="textMultiLine|textNoSuggestions"
-        android:padding="@dimen/tiny_margin" />
+        android:padding="15dp" />
 
     <LinearLayout
         android:id="@+id/header_linear"
@@ -35,48 +56,38 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button_new"
+            android:id="@+id/btn_baru"
             style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="70dp"
-            android:layout_height="match_parent"
+            android:background="@drawable/button"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
             android:layout_marginBottom="@dimen/tiny_margin"
             android:text="@string/file_new"
-            android:textColor="@color/black"/>
+            android:textColor="@color/white"
+             />
 
         <Button
-            android:id="@+id/button_open"
+            android:id="@+id/btn_buka"
             style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="70dp"
-            android:layout_height="match_parent"
+            android:background="@drawable/button"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
             android:layout_marginBottom="@dimen/tiny_margin"
             android:layout_marginLeft="@dimen/tiny_margin"
-            android:layout_marginStart="@dimen/tiny_margin"
+            android:layout_marginStart="15dp"
             android:text="@string/file_open"
-            android:textColor="@color/black"/>
+            android:textColor="@color/white"/>
 
         <Button
-            android:id="@+id/button_save"
+            android:id="@+id/btn_simpan"
             style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="70dp"
-            android:layout_height="match_parent"
+            android:background="@drawable/button"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
             android:layout_marginBottom="@dimen/tiny_margin"
             android:layout_marginLeft="@dimen/tiny_margin"
-            android:layout_marginStart="@dimen/tiny_margin"
+            android:layout_marginStart="15dp"
             android:text="@string/file_save"
-            android:textColor="@color/black"/>
-
-        <EditText
-            android:id="@+id/edit_title"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="@dimen/tiny_margin"
-            android:layout_marginLeft="@dimen/tiny_margin"
-            android:layout_marginStart="@dimen/tiny_margin"
-            android:layout_weight="1"
-            android:background="@android:color/white"
-            android:ems="10"
-            android:hint="@string/title"
-            android:inputType="textPersonName|textNoSuggestions"
-            android:padding="@dimen/tiny_margin" />
+            android:textColor="@color/white"/>
     </LinearLayout>
 </RelativeLayout>

@@ -1,7 +1,8 @@
 <resources>
-    <string name="app_name">MyReadWriteFile</string>
-    <string name="file_new">File New</string>
-    <string name="file_open">File Open</string>
-    <string name="file_save">File Save</string>
-    <string name="title">title</string>
+    <string name="app_name">Read Write File</string>
+    <string name="file_new">Baru</string>
+    <string name="file_open">Buka</string>
+    <string name="file_save">Simpan</string>
+    <string name="title">Masukkan judul file</string>
+    <string name="data">Masukkan isi file</string>
 </resources>
